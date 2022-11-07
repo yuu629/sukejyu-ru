@@ -1,0 +1,9 @@
+<div class="information">
+    <h2><%= @page_title %></h2>
+
+    <% flash.each do |key, value| %>
+        <p class="alert alert__<%= key %>">
+            <%= value %>
+        </p>
+    <% end %>
+</div>
