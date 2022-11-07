@@ -17,8 +17,8 @@
    <%= yield %>
    <footer>
     <h1>
-      現在の日時:
-      スケジュール合計:
+      現在の日時: <%= get_today_date %>
+      スケジュール合計: <%= Post.count('title') %>
     </h1>
    </footer>
   </body>
